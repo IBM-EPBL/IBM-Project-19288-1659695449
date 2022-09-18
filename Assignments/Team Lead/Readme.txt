@@ -1,4 +1,5 @@
-Name:Sriram.k
-regno:953619104039
-project role:Leader 
-project title:Global sales data analytics
+Name : SRIRAM K
+Reg No : 953619104039
+Project-Title : Global Sales Data Analytics
+Project-Role : Leader 
+
