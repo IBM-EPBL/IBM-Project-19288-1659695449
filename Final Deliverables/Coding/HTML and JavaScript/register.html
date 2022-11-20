@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+    <title>GLOBAL SALES DATA ANALYTICS</title>
+    <script>
+        function validateForm(){ 
+            let x1=document.forms["myform"]["name"].value;
+            if (x1==" ") {
+                alert("Name must be filled out");
+                return false;
+            }
+            let x2=document.forms["myform"]["email"].value;
+            if(x2.index('@')==-1){
+                alert("Email id is not valid");
+                return false;
+            }
+            let x3=document.forms["myform"]["pass"].value;
+            let x4=document.forms["myform"]["Cpass"].value;
+            if(x3.length<=8){
+                alert("password should be atleast 8 letters");
+                return false;
+            }
+            if(x3!=x4){
+                alert("password does not match");
+                return false;
+            }
+        }
+    </script>
+<style>
+    .register{
+        margin-left: 35%;
+        width: 400PX;
+        height: 69%;
+        margin-top:0%;
+        outline-style: solid;
+        outline-width: 1px;
+        outline-color: black;
+        border-radius: 30px;
+        text-align: center;
+        position: absolute;
+        background-image:url("./images.jfif");
+        opacity: 700%;
+        background-size: cover;
+        background-size:fill;
+        box-shadow: 20px 20px 2000px  black;
+    }
+    input[type=text]{
+        width: 80%;
+        border-style: solid;
+        border-width: 0px;
+        border-radius: px;
+        box-sizing: border-box;
+        padding: 8px;
+        background-color: #FADFFE;
+        outline: transparent;
+    }
+    input[type=password]{
+        width: 80%;
+        border-style: solid;
+        border-width: 0px;
+        border-radius: px;
+        box-sizing: border-box;
+        padding: 8px;
+        border-color:#B433C8 ;
+        background-color: #FADFFE;
+        outline: transparent;
+    }
+    .button1{
+    color: white;
+    padding: 10px;
+    background-color: #FE2DF7;
+    border: 0px;
+    border-radius: 5px;
+    width:80%;
+    cursor: pointer;
+    }
+    .button2{
+    color: white;
+    padding: 10px;
+    background-color:#FE2DF7;
+    border: 0px;
+    border-radius: 5px;
+    width: 50%;
+    cursor: pointer;
+    }
+    .body{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+</head>
+<body background="./download.jfif">
+    <center><img src="./3696437.png" alt="logo"width="250" height="200"></center>
+    <div CLASS="register">
+        <b><h1 style="font-family:Century Gothic ;">REGISTER</h1></b>
+        <div class="ATRI">
+            <div class ="j">
+                <form name="myform"onsubmit="return validateForm()" method="post" action="./home.html">
+                    <P style="font-family:Century Gothic ;"><B>Name:</B></P>
+                    <input id="name" type="text"  name="name" placeholder="enter Name"value=""required autofocus>
+                    <P style="font-family:Century Gothic ;"><B>Email Id:</B></P>
+                    <input id="email" type="text"  name="email" placeholder="enter email id"required>
+                    <BR>
+                    <P style="font-family:Century Gothic ;"><B>password</B></P>
+                    <input id="Pass" type="password" name="pass"placeholder="enter password" required><br>
+                    <P style="font-family:Century Gothic ;"><B>Confirm password</B></P>
+                    <input id="Cpass" type="password" name="Cpass"placeholder="enter password" required><br><br>       
+                    <div class="button">
+                        <button class="submit button1">REGISTER</ahref></button>
+                        </div><br>
+                            Already have an account? <a href="log.html"><b>Sign up</b></a>
+                        </div>
+                        <div class="footer">
+                            <b>Copyright &copy; 2022 &mdash; PNT2022TMID51031</b>
+                        </div>    
+                    </body>
+                </html>
+                    
